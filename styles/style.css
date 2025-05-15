@@ -71,7 +71,6 @@
 .cover__title-text {
   font-size: 100px;
   letter-spacing: 0.3em;
-  letter-spacing: 0.3em;
   padding: 165px 20px 106px 50px;
   text-transform: uppercase;
   z-index: 2;
@@ -109,10 +108,10 @@
   font-size: 22px;
   text-transform: uppercase;
   line-height: 28px;
-  word-spacing: 18px;
+  word-spacing: 19px;
 }
 
-.bet-button > button {
+.bet-button {
   background-color: transparent;
   color: #fff;
   text-transform: uppercase;
@@ -196,10 +195,10 @@
 }
 
 .lots__look-more-link {
-  display: block;
+  display: inline-block;
   padding-top: 30px;
 
-  padding-left: 40px;
+  margin-left: 40px;
   font-size: 20px;
 }
 
@@ -207,7 +206,7 @@
 
 .about {
   padding-left: 24px;
-  margin-top: 155px;
+  margin-top: 150px;
 }
 
 .about__column {
