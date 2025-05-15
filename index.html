@@ -13,8 +13,8 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item header__menu-item_active">
-            <a href="#0" class="header__menu-link">главная</a>
+          <li class="header__menu-item">
+            <a href="#0" class="header__menu-link menu_active">главная</a>
           </li>
           <li class="header__menu-item">
             <a href="#0" class="header__menu-link">посмотреть лоты</a>
@@ -42,24 +42,21 @@
     <main>
       <section class="cover">
         <div class="overlay"></div>
-        <div class="cover__title">
-          <h1 class="cover__title-text bold-text">
-            <span class="aligned-text_left">оно</span>
 
-            <span class="aligned-text_center">тебе</span>
+        <h1 class="cover__title-text bold-text">
+          <span class="aligned-text_left">оно</span>
 
-            <span class="aligned-text_right">надо</span>
-          </h1>
-        </div>
+          <span class="aligned-text_center">тебе</span>
+
+          <span class="aligned-text_right">надо</span>
+        </h1>
 
         <div class="cover__description">
-          <div class="cover__description-text">
-            <p>Аукцион вещей, в которые никто не верил</p>
-          </div>
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
 
-          <div class="bet-button">
-            <button>Сделать ставку</button>
-          </div>
+          <button type="button" class="bet-button">Сделать ставку</button>
         </div>
       </section>
 
@@ -71,14 +68,14 @@
             <a href="#0" class="card-link">
               <article class="card card_type_film">
                 <div class="overlay"></div>
-                <div class="card__title bold-text">
+                <h3 class="card__title bold-text">
                   Фильм режиссёра, который бросил киношколу
-                </div>
-                <div class="card__text">
+                </h3>
+                <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
-                </div>
+                </p>
               </article>
             </a>
           </li>
@@ -87,17 +84,17 @@
             <a href="#0" class="card-link">
               <article class="card card_type_book">
                 <div class="overlay"></div>
-                <div class="card__title bold-text">
+                <h3 class="card__title bold-text">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </div>
-                <div class="card__text">
+                </h3>
+                <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
                   начиная с античных времён. И это всё накладывается на
                   эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
                   Джеймса Джойса?
-                </div>
+                </p>
               </article>
             </a>
           </li>
@@ -106,15 +103,15 @@
             <a href="" class="card-link">
               <article class="card card_type_picture">
                 <div class="overlay"></div>
-                <div class="card__title bold-text">
+                <h3 class="card__title bold-text">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </div>
-                <div class="card__text">
+                </h3>
+                <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
                   что это — одна из революционных работ Кандинского?
-                </div>
+                </p>
               </article>
             </a>
           </li>
@@ -124,9 +121,8 @@
 
       <section class="about">
         <div class="about__column">
-          <!--grid-->
           <div class="about__container">
-            <div class="about__column-first">
+            <div class="about__column-logo">
               <div class="about__logo">
                 <img
                   src="./images/logo-white.svg"
@@ -137,13 +133,13 @@
             </div>
           </div>
 
-          <div class="about__column-second">
-            <div class="about__title bold-text">Об аукционе</div>
+          <div class="about__column-description">
+            <h2 class="about__title bold-text">Об аукционе</h2>
             <div class="about__text">
-              <p class="about__text-add-margin">
+              <p>
                 Здесь вы не встретите очередное пафосное собрание невероятно
                 дорогого антиквариата. Наши лоты вообще не должны были попасть
-                ни на один аукцион. Потому что кому нужен дневник
+                ни&nbsp;на один аукцион. Потому что кому нужен дневник
                 девочки-подростка или картина, которую может нарисовать даже
                 ребёнок? Кому нужны все эти странные вещи, созданные любителями?
               </p>
@@ -172,7 +168,7 @@
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-item footer__menu-item_active">
-            <a href="#0" class="footer__menu-link">главная</a>
+            <a href="#0" class="footer__menu-link menu_active">главная</a>
           </li>
           <li class="footer__menu-item">
             <a href="#0" class="footer__menu-link">посмотреть лоты</a>
@@ -185,7 +181,7 @@
 
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link">
+          <a href="#0" target="_blank" class="footer__social-link">
             <img
               src="./images/yt.svg"
               alt="YouTube"
@@ -194,7 +190,7 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link">
+          <a href="#0" target="_blank" class="footer__social-link">
             <img
               src="./images/vk.svg"
               alt="VKontakte"
@@ -203,7 +199,7 @@
           </a>
         </li>
         <li class="footer__social-list-item">
-          <a href="#0" class="footer__social-link">
+          <a href="#0" target="_blank" class="footer__social-link">
             <img
               src="./images/pinterest.svg"
               alt="pinterest"
